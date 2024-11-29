@@ -22,13 +22,13 @@
 				<section class="intro">
 					<header>
 						<h1>Joseph Eriksson</h1>
-						<p>Economist | Data Scientist </p>
+						<p>MS Economics | Entrepreneur </p>
 						<ul class="actions">
 							<li><a href="#first" class="arrow scrolly"><span class="label">Learn More</span></a></li>
 						</ul>
 					</header>
 					<div class="content">
-						<span class="image fill" data-position="center"><img src="images/dator.jpg" alt="Professional Desk Setup" /></span>
+						<span class="image fill" data-position="center"><img src="images/Berg.jpg" alt="Professional Desk Setup" /></span>
 					</div>
 				</section>
 				
@@ -142,7 +142,7 @@
             <ul>
                 <li>Studied Political science and specialized in Economics/Statistics.</li>
                 <li>Developed skills in law and working in public sector from the course in "förvaltningsrätt".</li>
-				<li>During my Bachelor I engaged myself in student activites, became editor for the student paper and took extra courses in statistics and German".</li>
+				<li>During my Bachelor I engaged myself in student activites, became editor-in-cheif for the student paper and took extra courses in statistics and German".</li>
 
             </ul>
         </article>
@@ -175,89 +175,151 @@
         </article>
 
         <!-- Project 2 -->
-        <article>
-            <h3>Editor-in-Chief for Polmagasinet</h3>
-            <h4>Uppsala Politicesstuderande (UPS)</h4>
-            <p><em>May 2019 – May 2020</em></p>
-            <ul>
-                <li>Coordinated bi-semester editions of Polmagasinet, leading collaboration between writers, illustrators, and board members.</li>
-                <li>Organized workshops to engage students, enhancing the magazine's content variety.</li>
-                <li>Contributed original articles and provided insightful editorial feedback to maintain quality and relevance.</li>
-            </ul>
-        </article>
+<article>
+    <h3>Editor-in-Chief for Polmagasinet</h3>
+    <h4>Uppsala Politicesstuderande (UPS)</h4>
+    <p><em>May 2019 – May 2020</em></p>
+    <ul>
+        <li>Coordinated bi-semester editions of Polmagasinet, leading collaboration between writers, illustrators, and board members.</li>
+        <li>Organized workshops to engage students, enhancing the magazine's content variety.</li>
+        <li>Contributed original articles and provided insightful editorial feedback to maintain quality and relevance.</li>
+        <li>Check out one of our student papers: <a href="assets\documents\Polmagasinet Nr1.pdf" target="_blank">Polmagasinet Nr 1</a></li>
+    </ul>
+</article>
     </div>
 </section>
 
 
+<!-- Section for Hidden Markov Model Visualization -->
 <section id="hmm-visualization">
     <header>
         <h2>Hidden Markov Model Visualization</h2>
     </header>
-    <div class="content">
-        <figure>
-            <img src="images/HMM.png" alt="Hidden Markov Model Visualization " />
-            <figcaption>Figure 1: This Hidden Markov Model (HMM) illustrates the transitions between three hidden states: Non adopter, Adopter, and Super adopter. The initial probabilities are our starting probabilities for each state, with transitions represented by directed arrows. Self-loops show the probability of remaining in the same state, while dashed arrows depict the emission probabilities for observable outcomes (Use and Non use). Probabilities are expressed as percentages rounded up or down 2 decimal points.</figcaption>
+    <div class="content" style="text-align: center; margin: 20px 0;">
+        <figure style="display: inline-block; max-width: 900px; width: 100%;">
+            <img src="images/HMM.png" alt="Hidden Markov Model Visualization" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
+            <figcaption style="font-size: 0.9em; margin-top: 10px; color: #555;">
+                Figure 1: This Hidden Markov Model (HMM) illustrates the transitions between three hidden states: Non adopter, Adopter, and Super adopter. The initial probabilities are our starting probabilities for each state, with transitions represented by directed arrows. Self-loops show the probability of remaining in the same state, while dashed arrows depict the emission probabilities for observable outcomes (Use and Non use). Probabilities are expressed as percentages rounded up or down to 2 decimal points.
+            </figcaption>
         </figure>
     </div>
 </section>
 
 
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>Ultrices erat magna sed condimentum</h2>
-						</header>
-						<div class="content">
-							<p><strong>Integer mollis egestas</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
 
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>Erat aliquam</h3>
-										<p>Vehicula ultrices dolor amet ultricies et condimentum. Magna sed etiam consequat, et lorem adipiscing sed dolor sit amet, consectetur amet do eiusmod tempor incididunt  ipsum suspendisse ultrices gravida.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/gallery/fulls/01.jpg" class="landscape"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/02.jpg"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/03.jpg"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/04.jpg" class="landscape"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
-										</div>
-									</div>
-								</section>
+<!-- Section for Credit Card Fraud Detection Project -->
+<section id="fraud-detection">
+    <header>
+        <h2>Credit Card Fraud Detection Analysis: Model Improvement Journey</h2>
+    </header>
+    <div class="content" style="text-align: center; margin: 20px 0;">
+        <!-- Project Overview -->
+        <div style="text-align: left; max-width: 900px; margin: 0 auto; padding: 15px;">
+            <p>
+                This project showcases the journey of improving a model to detect fraudulent credit card transactions. We started with a simple Logistic Regression model and gradually made improvements using advanced techniques. Initially, there were around 98 fraudulent transactions compared to over 56,800 legitimate ones, making the dataset highly imbalanced. The main goal was to improve the model's ability to identify fraud accurately, focusing on a measure called the F1-score, which helps balance the ability to catch fraud while avoiding false alarms.
+            </p>
+            <button class="button primary" onclick="toggleProjectDetails()" style="margin-top: 10px;">Show More</button>
+        </div>
 
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>Nisl consequat</h3>
-										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna finibus nisi nec lacinia ipsum maximus.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/gallery/fulls/05.jpg" class="landscape"><img src="images/gallery/thumbs/05.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
-										</div>
-									</div>
-								</section>
+        <div id="project-details" style="display: none;">
+            <!-- Initial Model Performance Visualization -->
+            <figure style="display: inline-block; max-width: 900px; width: 100%; margin-bottom: 20px;">
+                <img src="images/initial_model_performance.png" alt="Initial Logistic Regression Model Performance" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
+                <figcaption style="font-size: 0.9em; margin-top: 10px; color: #555;">
+                    Figure 1: Initial model performance using Logistic Regression without any balancing techniques. The F1-score was low due to the extreme class imbalance.
+                </figcaption>
+            </figure>
 
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>Lorem gravida</h3>
-										<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem ullamcorper dolore.  ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
-										</div>
-									</div>
-								</section>
+            <!-- SMOTE Application Visualization -->
+            <figure style="display: inline-block; max-width: 900px; width: 100%; margin-bottom: 20px;">
+                <img src="images/smote_model_performance.png" alt="Model Performance After Applying SMOTE" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
+                <figcaption style="font-size: 0.9em; margin-top: 10px; color: #555;">
+                    Figure 2: Model performance after applying SMOTE to balance the class distribution. This significantly improved recall, as the model could detect more fraudulent transactions.
+                </figcaption>
+            </figure>
 
-						</div>
-					</section>
+            <!-- Final Model Performance Visualization -->
+            <figure style="display: inline-block; max-width: 900px; width: 100%; margin-bottom: 20px;">
+                <img src="images/final_rf_model_performance.png" alt="Random Forest Model Performance" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
+                <figcaption style="font-size: 0.9em; margin-top: 10px; color: #555;">
+                    Figure 3: Final Random Forest model performance. Using a tuned Random Forest model and additional feature engineering, we achieved a significant increase in F1-score, effectively balancing precision and recall.
+                </figcaption>
+            </figure>
+
+            <!-- Conclusion -->
+            <div style="text-align: left; max-width: 900px; margin: 0 auto; padding: 15px;">
+                <p>
+                    Throughout the project, we leveraged different modeling strategies to enhance fraud detection. The progression from an imbalanced Logistic Regression to an optimized Random Forest demonstrates how data preprocessing, balancing, and model tuning are crucial to improving model performance, especially in the case of highly imbalanced datasets.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function toggleProjectDetails() {
+    const details = document.getElementById('project-details');
+    const button = event.target;
+    if (details.style.display === 'none') {
+        details.style.display = 'block';
+        button.textContent = 'Show Less';
+    } else {
+        details.style.display = 'none';
+        button.textContent = 'Show More';
+    }
+}
+</script>
+
+
+    
+
+
+
+
+
+
+
+<!-- Main Section -->
+<section>
+    <header>
+        <h2>Sport</h2>
+    </header>
+    <div class="content">
+
+        <!-- Section for Image Gallery -->
+        <section id="skiing-gallery">
+            <header>
+                <h3>Cross Country Skiing</h3>
+                <p>Here are some nice pictures.</p>
+            </header>
+            <div class="content" style="text-align: center; margin: 20px 0;">
+                <div class="gallery" style="display: inline-block; max-width: 900px; width: 100%; gap: 10px;">
+                    <!-- Skidspår bild 2 (Enhanced Presentation) -->
+                    <figure style="display: inline-block; width: 100%; max-width: 450px; margin: 10px;">
+                        <img src="images/Skidspår2.jpeg" alt="Ytterligare en bild på skidspår" style="width: 100%; height: auto; object-fit: cover; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
+                        <figcaption style="font-size: 0.9em; margin-top: 5px; color: #555;">
+                            A beautiful track at Billingen in Skövde.
+                        </figcaption>
+                    </figure>
+
+                    <!-- Skidspårkaffe bild (Enhanced Presentation) -->
+                    <figure style="display: inline-block; width: 100%; max-width: 450px; margin: 10px;">
+                        <img src="images/Skidspårkaffe.jpeg" alt="Bild på mig med pappa och storebror när vi dricker kaffe på skidspåret" style="width: 100%; height: auto; object-fit: cover; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
+                        <figcaption style="font-size: 0.9em; margin-top: 5px; color: #555;">
+                            Enjoying a coffee break with my dad (right) and brother(left) during the skiing adventure.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+
+
+
+
+
 
 
 
@@ -267,23 +329,10 @@
         <h2>Get in Touch</h2>
     </header>
     <div class="content">
-        <p>If you'd like to collaborate or learn more about my work, feel free to reach out through the form below or connect with me on GitHub and LinkedIn.</p>
-        <form method="post" action="#">
-            <div class="fields">
-                <div class="field half">
-                    <input type="text" name="name" id="name" placeholder="Your Name" />
-                </div>
-                <div class="field half">
-                    <input type="email" name="email" id="email" placeholder="Your Email" />
-                </div>
-                <div class="field">
-                    <textarea name="message" id="message" placeholder="Your Message" rows="7"></textarea>
-                </div>
-            </div>
-            <ul class="actions">
-                <li><input type="submit" value="Send Message" class="button primary" /></li>
-            </ul>
-        </form>
+        <p>If you'd like to collaborate or learn more about my work, feel free to reach out directly via email or connect on GitHub and LinkedIn.</p>
+        <ul class="actions">
+            <li><a href="mailto:joseph.eriksson.98@gmail.com" class="button primary">Send an Email</a></li>
+        </ul>
         <footer>
             <ul class="items">
                 <li>
