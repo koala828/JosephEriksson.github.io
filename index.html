@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Paradigm Shift by HTML5 UP</title>
+		<title>CV Website Joseph Eriksson</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -190,20 +190,133 @@
 </section>
 
 
+
 <!-- Section for Hidden Markov Model Visualization -->
 <section id="hmm-visualization">
     <header>
-        <h2>Hidden Markov Model Visualization</h2>
+        <h2>Unsupervised Learning with Hidden Markov Models</h2>
     </header>
     <div class="content" style="text-align: center; margin: 20px 0;">
-        <figure style="display: inline-block; max-width: 900px; width: 100%;">
-            <img src="images/HMM.png" alt="Hidden Markov Model Visualization" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
-            <figcaption style="font-size: 0.9em; margin-top: 10px; color: #555;">
-                Figure 1: This Hidden Markov Model (HMM) illustrates the transitions between three hidden states: Non adopter, Adopter, and Super adopter. The initial probabilities are our starting probabilities for each state, with transitions represented by directed arrows. Self-loops show the probability of remaining in the same state, while dashed arrows depict the emission probabilities for observable outcomes (Use and Non use). Probabilities are expressed as percentages rounded up or down to 2 decimal points.
-            </figcaption>
-        </figure>
+        <!-- Overview -->
+        <div style="text-align: left; max-width: 900px; margin: 0 auto; padding: 15px;">
+            <p>
+                To analyze how individuals adopt and continue using new policies or services over time, we employed a Hidden Markov Model (HMM) in the context of the RUT tax deduction—a Swedish tax subsidy for domestic services.
+            </p>
+            <button class="button primary" onclick="toggleHMMDetails()" style="margin-top: 10px;">Show More</button>
+        </div>
+
+        <div id="hmm-details" style="display: none;">
+            <figure style="display: inline-block; max-width: 900px; width: 100%; margin-bottom: 20px;">
+                <img src="images/HMM.png" alt="Hidden Markov Model Visualization" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
+                <figcaption style="text-align: left; margin-top: 10px;">
+                    This Hidden Markov Model (HMM) illustrates the transitions between three hidden states: Non-Adopter, Adopter, and Super-Adopter. The initial probabilities represent our starting point for each state, with transitions depicted by directed arrows. Self-loops show the probability of remaining in the same state, while dashed arrows depict the emission probabilities for observable outcomes (Use and Non-Use). Probabilities are expressed as percentages rounded to two decimal points.
+                </figcaption>
+            </figure>
+
+                <p>
+                    The diagram highlights how individuals engage with the RUT deduction over time. Non-Adopters have a low probability of starting to use the service, which explains the steady but slow overall adoption rate of the RUT deduction. Once individuals become Adopters, they are more likely to continue using the service, and some may transition into Super-Adopters who use it consistently.
+                </p>
+                <p>
+                    This analysis suggests that the slow adoption of the RUT deduction indicates that adjustments to home and work relative prices are generally slow and but during the project we encountered other reasons that could cause a slow adoption rate aswell. 
+                </p>
+
+        </div>
     </div>
 </section>
+
+<!-- Section for RUT Adoption and Consumption Trends -->
+<section id="rut-adoption-consumption">
+    <header>
+        <h2>Analyzing RUT Adoption Through Consumption Trends</h2>
+    </header>
+    <div class="content" style="text-align: center; margin: 20px 0;">
+        <!-- Overview -->
+        <div style="text-align: left; max-width: 900px; margin: 0 auto; padding: 15px;">
+            <p>
+                To understand the impact of the RUT tax deduction on domestic service consumption in Sweden, we analyzed national accounts data and compared it with neighboring countries and the United States. The following plots illustrate how the increase in RUT usage correlates with domestic service consumption and how Sweden's trends diverge from those of Denmark, Finland, and the US. These insights help assess the effectiveness of the RUT deduction in influencing consumer behavior and the broader economy.
+            </p>
+            <button class="button primary" onclick="toggleConsumptionDetails()" style="margin-top: 10px;">Show More</button>
+        </div>
+
+        <div id="consumption-details" style="display: none;">
+            <!-- Plot 1: RUT Increase Tracks Consumption Data in Sweden -->
+            <figure style="display: inline-block; max-width: 900px; width: 100%; margin: 20px 0;">
+                <img src="images/Trend of Rut and domestic services Expenditure.png" alt="RUT Increase and Domestic Service Consumption in Sweden" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px;" />
+                <figcaption style="text-align: left; margin-top: 10px;">
+                    <strong>Figure 1:</strong> The consumption share of domestic services (%) and the total RUT amount nationally (in million SEK) in Sweden from 2000 to 2020. The plot shows a correlation between the increase in RUT usage and the rise in domestic service consumption.
+                </figcaption>
+            </figure>
+
+            <!-- Plots 2 and 3: Sweden Diverges from Neighbors -->
+            <figure style="display: inline-block; max-width: 900px; width: 100%; margin: 20px 0;">
+                <img src="images/Trend of domestic services Expenditure Nordic Countries.png" alt="Domestic Service Consumption Comparison between Sweden, Denmark, and Finland" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px; margin-bottom: 10px;" />
+                <img src="images/Trend of food and beverage services Expenditure Nordic Countries.png" alt="Restaurants and Cafes Consumption Comparison between Sweden, Denmark, and Finland" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px;" />
+                <figcaption style="text-align: left; margin-top: 10px;">
+                    <strong>Figure 2:</strong> (Top) Consumption share of domestic services (%) for Sweden, Denmark, and Finland from 2000 to 2020. (Bottom) Consumption share of restaurants and cafes (%) for the same countries and period. The top plot shows that Sweden's domestic service consumption has increased significantly compared to its neighbors, indicating the impact of the RUT deduction. The bottom plot demonstrates that consumption trends in restaurants and cafes remain similar across the countries, suggesting that the divergence is specific to domestic services.
+                </figcaption>
+            </figure>
+
+            <!-- Plot 4: No Household Service Trend in the US -->
+            <figure style="display: inline-block; max-width: 900px; width: 100%; margin: 20px 0;">
+                <img src="images/Trend of domestic services US.png" alt="Household Service Consumption Trend in the US vs. Sweden" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px;" />
+                <figcaption style="text-align: left; margin-top: 10px;">
+                    <strong>Figure 3:</strong> Comparison of consumption shares between Sweden and the United States from 2000 to 2020. The US data includes categories like housekeeping services, gardening, and babysitting. The plot shows that there is no significant upward trend in household service consumption in the US, unlike in Sweden, highlighting the unique impact of the RUT deduction on Swedish consumer behavior.
+                </figcaption>
+            </figure>
+
+            <!-- Interpretation -->
+            <div style="text-align: left; max-width: 900px; margin: 0 auto; padding: 15px;">
+                <p>
+                    The first plot illustrates that as the total amount claimed under the RUT deduction increased over time, the consumption share of domestic services in Sweden also rose. This suggests a strong correlation between the implementation and expansion of the RUT subsidy and increased spending on domestic services. It indicates that the RUT deduction effectively encouraged households to outsource domestic tasks, shifting from home production to market services.
+                </p>
+                <p>
+                    The second and third plots compare Sweden's consumption trends with those of Denmark and Finland. The top plot shows that Sweden's consumption share of domestic services has increased significantly since the introduction of the RUT deduction, whereas Denmark and Finland have remained relatively stable. This divergence suggests that the rise in Sweden is not part of a broader regional trend but is likely influenced by the RUT policy. The bottom plot shows that consumption trends in restaurants and cafes are similar across all three countries, indicating that the divergence is specific to domestic services and not a general increase in service consumption.
+                </p>
+                <p>
+                    The fourth plot compares Sweden's domestic service consumption with that of the United States, including categories like housekeeping services, gardening, and babysitting. The US data shows no significant upward trend in household service consumption over the same period. This contrast highlights the unique impact of the RUT deduction on Swedish consumer behavior and suggests that without such policy interventions, consumption patterns in domestic services remain relatively flat.
+                </p>
+                <p>
+                    These plots are connected to the project as they provide empirical evidence supporting the hypothesis that policy measures like the RUT deduction can effectively influence consumer behavior and encourage the adoption of market-based domestic services. They illustrate how adjustments to relative prices, facilitated by tax subsidies, can overcome slow adoption rates and shift household consumption patterns. This aligns with the project's focus on analyzing adjustment frictions in the relative prices of home versus market production and their role in the adoption of services like those covered by the RUT deduction.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleConsumptionDetails() {
+        const details = document.getElementById('consumption-details');
+        const button = event.target;
+        if (details.style.display === 'none') {
+            details.style.display = 'block';
+            button.textContent = 'Show Less';
+        } else {
+            details.style.display = 'none';
+            button.textContent = 'Show More';
+        }
+    }
+</script>
+
+
+
+<script>
+    function toggleHMMDetails() {
+        const details = document.getElementById('hmm-details');
+        const button = event.target;
+        if (details.style.display === 'none') {
+            details.style.display = 'block';
+            button.textContent = 'Show Less';
+        } else {
+            details.style.display = 'none';
+            button.textContent = 'Show More';
+        }
+    }
+    </script>
+    
+
+
+
+
 
 
 
