@@ -22,7 +22,7 @@
 				<section class="intro">
 					<header>
 						<h1>Joseph Eriksson</h1>
-						<p>MS Economics | Entrepreneur </p>
+						<p>MS Economics </p>
 						<ul class="actions">
 							<li><a href="#first" class="arrow scrolly"><span class="label">Learn More</span></a></li>
 						</ul>
@@ -163,16 +163,7 @@
     </header>
     <div class="content">
         <!-- Project 1 -->
-        <article>
-            <h3>@SnapShootEcon - Social Media Account on Twitter</h3>
-            <p><em>December 2023 – Present</em></p>
-            <ul>
-                <li>Developed R scripts to automate the monthly retrieval and cleaning of economic data via API.</li>
-                <li>Implemented an automated report in Power BI that refreshes with new data, facilitating consistent and up-to-date monthly economic analysis.</li>
-                <li>Developed advanced forecasting models using Monte Carlo simulations in R.</li>
-                <li>Follow the project on Twitter: <a href="https://x.com/SnapShootEcon" target="_blank">@SnapShootEcon</a></li>
-            </ul>
-        </article>
+        
 
         <!-- Project 2 -->
 <article>
@@ -319,56 +310,6 @@
 
 
 
-
-<!-- Section for Credit Card Fraud Detection Project -->
-<section id="fraud-detection">
-    <header>
-        <h2>Credit Card Fraud Detection Analysis: Model Improvement Journey</h2>
-    </header>
-    <div class="content" style="text-align: center; margin: 20px 0;">
-        <!-- Project Overview -->
-        <div style="text-align: left; max-width: 900px; margin: 0 auto; padding: 15px;">
-            <p>
-                This project showcases the journey of improving a model to detect fraudulent credit card transactions. We started with a simple Logistic Regression model and gradually made improvements using advanced techniques. Initially, there were around 98 fraudulent transactions compared to over 56,800 legitimate ones, making the dataset highly imbalanced. The main goal was to improve the model's ability to identify fraud accurately, focusing on a measure called the F1-score, which helps balance the ability to catch fraud while avoiding false alarms.
-            </p>
-            <button class="button primary" onclick="toggleProjectDetails()" style="margin-top: 10px;">Show More</button>
-        </div>
-
-        <div id="project-details" style="display: none;">
-            <!-- Initial Model Performance Visualization -->
-            <figure style="display: inline-block; max-width: 900px; width: 100%; margin-bottom: 20px;">
-                <img src="images/initial_model_performance.png" alt="Initial Logistic Regression Model Performance" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
-                <figcaption style="font-size: 0.9em; margin-top: 10px; color: #555;">
-                    Figure 1: Initial model performance using Logistic Regression without any balancing techniques. The F1-score was low due to the extreme class imbalance.
-                </figcaption>
-            </figure>
-
-            <!-- SMOTE Application Visualization -->
-            <figure style="display: inline-block; max-width: 900px; width: 100%; margin-bottom: 20px;">
-                <img src="images/smote_model_performance.png" alt="Model Performance After Applying SMOTE" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
-                <figcaption style="font-size: 0.9em; margin-top: 10px; color: #555;">
-                    Figure 2: Model performance after applying SMOTE to balance the class distribution. This significantly improved recall, as the model could detect more fraudulent transactions.
-                </figcaption>
-            </figure>
-
-            <!-- Final Model Performance Visualization -->
-            <figure style="display: inline-block; max-width: 900px; width: 100%; margin-bottom: 20px;">
-                <img src="images/final_rf_model_performance.png" alt="Random Forest Model Performance" style="width: 100%; height: auto; object-fit: contain; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
-                <figcaption style="font-size: 0.9em; margin-top: 10px; color: #555;">
-                    Figure 3: Final Random Forest model performance. Using a tuned Random Forest model and additional feature engineering, we achieved a significant increase in F1-score, effectively balancing precision and recall.
-                </figcaption>
-            </figure>
-
-            <!-- Conclusion -->
-            <div style="text-align: left; max-width: 900px; margin: 0 auto; padding: 15px;">
-                <p>
-                    Throughout the project, we leveraged different modeling strategies to enhance fraud detection. The progression from an imbalanced Logistic Regression to an optimized Random Forest demonstrates how data preprocessing, balancing, and model tuning are crucial to improving model performance, especially in the case of highly imbalanced datasets.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <script>
 function toggleProjectDetails() {
     const details = document.getElementById('project-details');
@@ -467,8 +408,6 @@ function toggleProjectDetails() {
 
 				
 
-				<!-- Copyright -->
-					<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
 
 			</div>
 
