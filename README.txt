@@ -1,4 +1,6 @@
 # My personal CV Website
+Link:
+https://koala828.github.io/JosephEriksson.github.io/
 
 This repository contains the source code for my interactive personal CV website that is hosted on github pages. It is built using **HTML5**, **CSS**, and **JavaScript** and showcases my professional journey, education, work experience, and selected projects.
 
